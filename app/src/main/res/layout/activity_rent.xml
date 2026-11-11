@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Your Rental"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1F3A5F"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:id="@+id/rentCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car name"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rentCarDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car details"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/daysLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rental days: 1"
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+        <SeekBar
+            android:id="@+id/daysSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/totalCostText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total cost: 0 credits"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:id="@+id/rentBalanceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your balance: 500 credits"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Booking"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Booking" />
+
+    </LinearLayout>
+</ScrollView>
